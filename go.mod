@@ -1,4 +1,4 @@
-module github.com/mix-go/mix-console-skeleton
+module github.com/mix-go/console-skeleton
 
 go 1.13
 

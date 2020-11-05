@@ -4,7 +4,7 @@ import (
     "context"
     "fmt"
     "github.com/mix-go/console/catch"
-    "github.com/mix-go/mix-console-skeleton/globals"
+    "github.com/mix-go/console-skeleton/globals"
     "github.com/mix-go/workerpool"
     "os"
     "os/signal"

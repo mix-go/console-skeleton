@@ -1,8 +1,8 @@
 package manifest
 
 import (
-    "github.com/mix-go/mix-console-skeleton/manifest/beans"
-    "github.com/mix-go/mix-console-skeleton/manifest/commands"
+    "github.com/mix-go/console-skeleton/manifest/beans"
+    "github.com/mix-go/console-skeleton/manifest/commands"
     "github.com/mix-go/console"
     "github.com/mix-go/dotenv"
 )

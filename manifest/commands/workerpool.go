@@ -2,7 +2,7 @@ package commands
 
 import (
     "github.com/mix-go/console"
-    "github.com/mix-go/mix-console-skeleton/commands"
+    "github.com/mix-go/console-skeleton/commands"
 )
 
 func init() {
