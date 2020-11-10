@@ -3,8 +3,8 @@ package commands
 import (
     "context"
     "fmt"
-    "github.com/mix-go/console/catch"
     "github.com/mix-go/console-skeleton/globals"
+    "github.com/mix-go/console/catch"
     "github.com/mix-go/workerpool"
     "os"
     "os/signal"
@@ -24,6 +24,7 @@ func (t *worker) Do(data interface{}) {
         }
     }()
 
+    // 执行业务逻辑
     fmt.Println(data)
 }
 
@@ -45,7 +46,7 @@ func (t *WorkerPoolCommand) Main() {
         d.Stop()
     }()
 
-    d.Run()
+    d.Run() // 阻塞代码，直到任务全部执行完成并且全部 Worker 停止
 }
 
 type WorkerPoolDaemonCommand struct {
@@ -79,5 +80,5 @@ func (t *WorkerPoolDaemonCommand) Main() {
         }
     }()
 
-    d.Run()
+    d.Run() // 阻塞代码，直到任务全部执行完成并且全部 Worker 停止
 }
